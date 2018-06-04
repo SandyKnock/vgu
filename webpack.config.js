@@ -82,8 +82,8 @@ module.exports = {
       },
       // static assets
       { test: /\.html$/, use: 'html-loader' },
-      { test: /\.(png|svg)$/, use: 'url-loader?limit=10000' },
-      { test: /\.(eot|svg|ttf|woff|woff2)$/, use: 'file-loader' },
+      // { test: /\.(png|svg)$/, use: 'url-loader?limit=10000' },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'file-loader' },
       { test: /\.(jpg|gif)$/, use: 'file-loader' },
     ]
   },
